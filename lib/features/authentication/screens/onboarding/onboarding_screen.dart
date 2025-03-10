@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_ecommerce_app/features/authentication/controllers/onboarding_controller.dart';
 import 'package:t_store_ecommerce_app/utils/constants/image_strings.dart';
-import 'package:t_store_ecommerce_app/utils/constants/texts.dart';
-import 'onboarding/widgets/onboarding_dot_navigation.dart';
-import 'onboarding/widgets/onboarding_next_button.dart';
-import 'onboarding/widgets/onboarding_page.dart';
-import 'onboarding/widgets/onboarding_skip_button.dart';
+import 'package:t_store_ecommerce_app/utils/constants/text_strings.dart';
+import 'widgets/onboarding_dot_navigation.dart';
+import 'widgets/onboarding_next_button.dart';
+import 'widgets/onboarding_page.dart';
+import 'widgets/onboarding_skip_button.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
