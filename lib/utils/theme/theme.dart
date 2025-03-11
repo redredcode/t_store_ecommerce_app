@@ -7,6 +7,7 @@ import 'custom_themes/checkbox_theme.dart';
 import 'custom_themes/chip_theme.dart';
 import 'custom_themes/elevated_button_theme.dart';
 import 'custom_themes/outlined_button_theme.dart';
+import 'custom_themes/text_button_theme.dart';
 import 'custom_themes/text_field_theme.dart';
 import 'custom_themes/text_theme.dart';
 
@@ -26,6 +27,7 @@ class TAppTheme {
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+    textButtonTheme: TTextButtonTheme.lightTextButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
@@ -42,6 +44,7 @@ class TAppTheme {
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+    textButtonTheme: TTextButtonTheme.darkTextButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
   );
 }
