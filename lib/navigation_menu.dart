@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store_ecommerce_app/features/shop/screens/home/home_screen.dart';
+import 'package:t_store_ecommerce_app/features/shop/screens/store/store_screen.dart';
 import 'package:t_store_ecommerce_app/utils/constants/colors.dart';
 import 'package:t_store_ecommerce_app/utils/helpers/helper_functions.dart';
 
@@ -39,7 +40,7 @@ class NavigatorController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.greenAccent),
+    const StoreScreen(),
     Container(color: Colors.lightGreen),
     Container(color: Colors.lightGreenAccent),
   ];
