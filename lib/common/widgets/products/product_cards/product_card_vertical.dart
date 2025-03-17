@@ -9,17 +9,18 @@ import 'package:t_store_ecommerce_app/utils/helpers/helper_functions.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../custom_shapes/containers/rounded_container.dart';
 import '../../icons/t_circular_icon.dart';
+import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
-class TProductCartVertical extends StatelessWidget {
-  const TProductCartVertical({super.key});
+class TProductCardVertical extends StatelessWidget {
+  const TProductCardVertical({super.key});
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: (){},
+      onTap: () {},
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -98,24 +99,26 @@ class TProductCartVertical extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        '\$35.5',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
+                      const TProductPriceText(price: '35.5',),
                       Container(
                         decoration: const BoxDecoration(
                           color: TColors.dark,
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(TSizes.productImageRadius),
+                            bottomRight:
+                                Radius.circular(TSizes.productImageRadius),
                           ),
                         ),
                         child: const SizedBox(
-                            height: TSizes.iconLg * 1.2,
-                            width: TSizes.iconLg * 1.2,
-                            child: Center(child: Icon(Iconsax.add, color: TColors.white,),),),
+                          height: TSizes.iconLg * 1.2,
+                          width: TSizes.iconLg * 1.2,
+                          child: Center(
+                            child: Icon(
+                              Iconsax.add,
+                              color: TColors.white,
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -128,3 +131,4 @@ class TProductCartVertical extends StatelessWidget {
     );
   }
 }
+
