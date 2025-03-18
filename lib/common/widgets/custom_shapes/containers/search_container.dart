@@ -27,10 +27,10 @@ class TSearchContainer extends StatelessWidget {
     final isDarkMode = THelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+      padding: padding,
       child: Container(
         width: TDeviceUtils.getScreenWidth(context),
-        padding: padding,
+        padding: const EdgeInsets.all(TSizes.md),
         decoration: BoxDecoration(
           color: showBackground
               ? isDarkMode
