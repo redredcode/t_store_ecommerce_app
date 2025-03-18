@@ -59,7 +59,7 @@ class StoreScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
-                      TGridLayout(itemCount: 4, mainAxisExtent: 10, itemBuilder: (_, index) {
+                      TGridLayout(itemCount: 4, mainAxisExtent: 80, itemBuilder: (_, index) {
                         return GestureDetector(
                           onTap: () {},
                           child: TRoundedContainer(
