@@ -21,18 +21,26 @@ class TCategoryTab extends StatelessWidget {
           child: Column(
             children: [
               // Brands
-              const TBrandShowcase(images: [TImages.productImage3, TImages.productImage2, TImages.productImage1],),
+              const TBrandShowcase(
+                images: [
+                  TImages.productImage3,
+                  TImages.productImage2,
+                  TImages.productImage1
+                ],
+              ),
               const SizedBox(height: TSizes.spaceBtwItems),
 
               // Products
-              TSectionHeading(title: 'You might like', onPressed: (){}),
+              TSectionHeading(title: 'You might like', onPressed: () {}),
               const SizedBox(height: TSizes.spaceBtwItems),
 
-              TGridLayout(itemCount: 4, itemBuilder: (_, index) {
-                return const TProductCardVertical();
-              },),
+              TGridLayout(
+                itemCount: 4,
+                itemBuilder: (_, index) {
+                  return const TProductCardVertical();
+                },
+              ),
               const SizedBox(height: TSizes.spaceBtwSections),
-
             ],
           ),
         ),

@@ -2,18 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:t_store_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:t_store_ecommerce_app/common/widgets/appbar/tab_bar.dart';
 import 'package:t_store_ecommerce_app/common/widgets/brands/t_brand_card.dart';
-import 'package:t_store_ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:t_store_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:t_store_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:t_store_ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:t_store_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:t_store_ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:t_store_ecommerce_app/utils/constants/colors.dart';
-import 'package:t_store_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:t_store_ecommerce_app/utils/constants/sizes.dart';
 import 'package:t_store_ecommerce_app/utils/helpers/helper_functions.dart';
 
-import '../../../../common/widgets/brands/brand_show_case.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});

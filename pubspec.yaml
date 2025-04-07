@@ -70,6 +70,7 @@ flutter:
     - assets/icons/brands/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/images/user/
     - assets/images/banners/
     - assets/images/products/
     - assets/icons/categories/

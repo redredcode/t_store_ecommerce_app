@@ -7,11 +7,11 @@ import '../../../utils/helpers/helper_functions.dart';
 class TVerticalImageText extends StatelessWidget {
   const TVerticalImageText({
     super.key,
+    this.onTap,
     required this.image,
     required this.title,
-    this.backgroundColor,
     this.textColor = TColors.white,
-    this.onTap,
+    this.backgroundColor,
   });
 
   final String image, title;
