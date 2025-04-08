@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store_ecommerce_app/common/styles/t_shadows.dart';
 import 'package:t_store_ecommerce_app/common/widgets/images/t_rounded_image.dart';
+import 'package:t_store_ecommerce_app/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:t_store_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:t_store_ecommerce_app/utils/constants/sizes.dart';
 import 'package:t_store_ecommerce_app/utils/helpers/helper_functions.dart';
@@ -21,7 +23,7 @@ class TProductCardVertical extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: ()=> Get.to(() => const ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
