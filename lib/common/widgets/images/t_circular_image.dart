@@ -27,8 +27,8 @@ class TCircularImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 56,
-      height: 56,
+      width: width,
+      height: height,
       padding: const EdgeInsets.all(TSizes.sm),
       decoration: BoxDecoration(
         // if image bg color is null then switch it to light and dark mode color design.
