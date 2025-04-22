@@ -65,7 +65,7 @@ class TProductMetaData extends StatelessWidget {
             Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: TSizes.spaceBtwItems /1.5),
 
         /// Brand
         Row(
@@ -78,7 +78,9 @@ class TProductMetaData extends StatelessWidget {
             ),
             const SizedBox(width: TSizes.spaceBtwItems / 1.5),
             const TBrandTitleWithVerifiedIcon(
-                title: 'Nike', brandTextSize: TextSizes.medium,),
+              title: 'Nike',
+              brandTextSize: TextSizes.medium,
+            ),
           ],
         )
       ],
