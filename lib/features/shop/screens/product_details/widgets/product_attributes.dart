@@ -4,6 +4,7 @@ import 'package:t_store_ecommerce_app/common/widgets/texts/product_price_text.da
 import 'package:t_store_ecommerce_app/common/widgets/texts/product_title_text.dart';
 import 'package:t_store_ecommerce_app/common/widgets/texts/section_heading.dart';
 
+import '../../../../../common/widgets/chips/choice_chip.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
@@ -81,8 +82,17 @@ class TProductAttributes extends StatelessWidget {
         const SizedBox(height: TSizes.spaceBtwItems),
 
         /// Attributes
+        const Column(
+          children: [
+            TSectionHeading(title: 'Colors'),
+            SizedBox(height: TSizes.spaceBtwItems / 2),
+            TChoiceChip(text: 'Green', selected: true),
 
+          ],
+        )
       ],
     );
   }
 }
+
+
