@@ -28,7 +28,10 @@ dependencies:
   intl: ^0.20.2
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.1.0
+
+  # Product Specific
   carousel_slider: ^5.0.0
+  readmore: ^3.0.0
 
   # Icons
   iconsax: ^0.0.8
