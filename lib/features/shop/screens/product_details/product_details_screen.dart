@@ -36,6 +36,7 @@ class ProductDetailsScreen extends StatelessWidget {
 
                   /// Price, Title, Stock & Brand
                   const TProductMetaData(),
+                  const SizedBox(height: TSizes.spaceBtwItems),
 
                   /// Attributes
                   const TProductAttributes(),
