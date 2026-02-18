@@ -51,11 +51,11 @@ class TProductMetaData extends StatelessWidget {
           ],
         ),
 
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
         /// Title
         const TProductTitleText(title: 'Green Nike Sport Shirt'),
-        const SizedBox(width: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
         /// Stock Status
         Row(
