@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:t_store_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:t_store_ecommerce_app/features/shop/screens/product_reviews/widgets/progress_indicator_and_rating.dart';
 import 'package:t_store_ecommerce_app/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
+import 'package:t_store_ecommerce_app/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:t_store_ecommerce_app/utils/constants/colors.dart';
 import 'package:t_store_ecommerce_app/utils/constants/sizes.dart';
 import 'package:t_store_ecommerce_app/utils/device/device_utility.dart';
@@ -31,9 +32,15 @@ class ProductReviewScreen extends StatelessWidget {
 
               /// Overall Product Ratings
               const TOverallProductRating(),
-              TRatingBarIndicator(rating: 3.5,),
+              const TRatingBarIndicator(rating: 4.8,),
               Text('12,200', style: Theme.of(context).textTheme.bodySmall),
-              SizedBox(height: TSizes.spaceBtwSections)
+              const SizedBox(height: TSizes.spaceBtwSections),
+
+              /// User Review List
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ),
