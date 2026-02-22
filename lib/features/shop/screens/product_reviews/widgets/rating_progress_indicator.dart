@@ -23,10 +23,10 @@ class TOverallProductRating extends StatelessWidget {
           child: Column(
             children: [
               TRatingProgressIndicator(text: '5', value: 1.0),
-              TRatingProgressIndicator(text: '4', value: 1.8),
-              TRatingProgressIndicator(text: '3', value: 1.6),
-              TRatingProgressIndicator(text: '2', value: 1.4),
-              TRatingProgressIndicator(text: '1', value: 1.2),
+              TRatingProgressIndicator(text: '4', value: 0.8),
+              TRatingProgressIndicator(text: '3', value: 0.6),
+              TRatingProgressIndicator(text: '2', value: 0.4),
+              TRatingProgressIndicator(text: '1', value: 0.2),
             ],
           ),
         ),
