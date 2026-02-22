@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store_ecommerce_app/common/widgets/appbar/appbar.dart';
 import 'package:t_store_ecommerce_app/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:t_store_ecommerce_app/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:t_store_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:t_store_ecommerce_app/features/personalization/screens/address/address_screen.dart';
 import 'package:t_store_ecommerce_app/utils/constants/colors.dart';
 
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
@@ -51,10 +54,11 @@ class SettingsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: TSizes.spaceBtwItems),
 
-                  const TSettingsMenuTile(
+                  TSettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subtitle: 'Set shopping delivery address',
+                    onTap: () => Get.to(()=> const UserAddressScreen()),
                   ),
                   const TSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
